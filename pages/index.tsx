@@ -1,5 +1,6 @@
 import Head from "next/head";
-import ThemeSwitch from "./components/themeswitch";
+
+import ResponsiveAppBar from "./components/navbar";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <ResponsiveAppBar></ResponsiveAppBar>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">
@@ -16,9 +18,6 @@ export default function Home() {
             Next.js!
           </a>
         </h1>
-        <div className="absolute right-8 top-8 flex justify-center">
-          <ThemeSwitch />
-        </div>
       </main>
     </div>
   );

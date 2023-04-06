@@ -1,6 +1,8 @@
 import { TbSun, TbMoon } from "react-icons/tb";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import Button from '@mui/material/Button';
+
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
@@ -17,7 +19,7 @@ const ThemeSwitch = () => {
   };
 
   return (
-    <button className="duration-400 h-6 w-6 transition-opacity" onClick={handleClick}>
+    <Button className="duration-400 h-6 w-6 transition-opacity" onClick={handleClick} color='inherit'>
       <TbSun
         className={`absolute top-0 right-0 h-6 w-6 ${
           resolvedTheme === "light" ? "" : "rotate-180 opacity-0"
@@ -28,7 +30,7 @@ const ThemeSwitch = () => {
           resolvedTheme === "dark" ? "" : "rotate-180 opacity-0"
         }`}
       />
-    </button>
+    </Button>
   );
 };
 
