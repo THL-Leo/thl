@@ -2,11 +2,15 @@
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "google"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "parserOptions": {
     "project": "**/tsconfig.json"
+  },
+  "rules": {
+    "indent": ["warn", 2]
   }
 }
