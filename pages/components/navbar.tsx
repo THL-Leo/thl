@@ -13,10 +13,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import ThemeSwitch from './themeswitch';
 
 const pages = ['About Me', 'Projects', 'Experience'];
-/**
-  The Responsive AppBar located at the top of the page
-  @return {JSX.Element} - The AppBar component.
-*/
+
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] =
     React.useState<null | HTMLElement>(null);

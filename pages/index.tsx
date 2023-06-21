@@ -15,7 +15,7 @@ export default function Home() {
       py-2"
     >
       <Head>
-        <title>Create Next App</title>
+        <title>THL</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ResponsiveAppBar></ResponsiveAppBar>
