@@ -1,9 +1,10 @@
 {
   "extends": [
+    "google",
     "next/core-web-vitals",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "google"
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
@@ -11,7 +12,11 @@
     "project": "**/tsconfig.json"
   },
   "rules": {
+    "prettier/prettier": "error",
     "indent": ["warn", 2],
-    "require-jsdoc" : 0
+    "require-jsdoc" : 0,
+    "max-len": 0,
+    "jsx-no-undef": 0,
+    "react/self-closing-comp": "error"
   }
 }
