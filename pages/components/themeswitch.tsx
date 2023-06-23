@@ -20,7 +20,7 @@ const ThemeSwitch = () => {
   }
 
   return (
-    <button onClick={handleClick} color='inherit'>
+    <button onClick={handleClick} color='inherit' className='duration-100'>
       {isDarkMode ? (
         <TbMoon className='h-6 w-6' />
       ) : (
