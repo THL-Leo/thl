@@ -1,7 +1,6 @@
 import {TbSun, TbMoon} from 'react-icons/tb';
 import {useState, useEffect} from 'react';
 import {useTheme} from 'next-themes';
-import Button from '@mui/material/Button';
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);

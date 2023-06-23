@@ -1,7 +1,6 @@
 import Head from 'next/head';
 
 import Header from './components/topbar';
-import ThemeSwitch from './components/themeswitch';
 
 export default function Home() {
   return (

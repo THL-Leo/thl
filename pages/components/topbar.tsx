@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from 'flowbite-react';
+import {Navbar} from 'flowbite-react';
 import ThemeSwitch from './themeswitch';
 
 export default function DefaultNavbar() {
