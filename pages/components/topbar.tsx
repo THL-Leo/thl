@@ -2,7 +2,7 @@ import React from 'react';
 import {Navbar} from 'flowbite-react';
 import ThemeSwitch from './themeswitch';
 
-export default function DefaultNavbar() {
+export default function NavigationBar() {
   return (
     <header className='sticky top-0 z-20'>
       <Navbar fluid rounded className='bg-transparent'>
@@ -16,13 +16,13 @@ export default function DefaultNavbar() {
           <ThemeSwitch />
         </div>
         <Navbar.Collapse className='justify-center'>
-          <Navbar.Link href='#' className='text-inherit'>
-            <p>About Me</p>
+          <Navbar.Link href='/' className='text-inherit'>
+            <p>Home</p>
           </Navbar.Link>
           <Navbar.Link href='#' className='text-inherit'>
             <p>Projects</p>
           </Navbar.Link>
-          <Navbar.Link href='#' className='text-inherit'>
+          <Navbar.Link href='/resume' className='text-inherit'>
             <p>Resume</p>
           </Navbar.Link>
           <Navbar.Link href='#' className='text-inherit'>

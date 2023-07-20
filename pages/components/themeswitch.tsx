@@ -5,14 +5,11 @@ import {useTheme} from 'next-themes';
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
   const {resolvedTheme, setTheme} = useTheme();
-  const [isDarkMode, setIsDarkMode] = useState(resolvedTheme === 'dark');
 
   useEffect(() => setMounted(true), []);
 
   const handleClick = () => {
-    const newTheme = isDarkMode ? 'light' : 'dark';
-    setTheme(newTheme);
-    setIsDarkMode(!isDarkMode);
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
   };
 
   if (!mounted) {
@@ -20,11 +17,11 @@ const ThemeSwitch = () => {
   }
 
   return (
-    <button onClick={handleClick} color='inherit' className='duration-100'>
-      {isDarkMode ? (
-        <TbMoon className='h-6 w-6' />
+    <button onClick={handleClick}>
+      {resolvedTheme === 'dark' ? (
+        <TbSun className={'h-6 w-6'} />
       ) : (
-        <TbSun className='h-6 w-6' />
+        <TbMoon className={'h-6 w-6'} />
       )}
     </button>
   );

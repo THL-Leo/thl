@@ -6,7 +6,7 @@ import {StyledEngineProvider} from '@mui/material/styles';
 export default function Site({Component, pageProps}: AppProps) {
   return (
     <StyledEngineProvider injectFirst>
-      <ThemeProvider defaultTheme='dark'>
+      <ThemeProvider defaultTheme='system'>
         <Component {...pageProps} />
       </ThemeProvider>
     </StyledEngineProvider>
