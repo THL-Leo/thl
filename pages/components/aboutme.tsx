@@ -3,34 +3,34 @@ import Image from 'next/image';
 
 const AboutMe = () => {
   return (
-    <div className='flex items-start'>
+    <div className='flex flex-col items-start 2xl:flex-row'>
       <div className='m-5 flex flex-col'>
-        {' '}
-        <br />
-        {/* Add flex-col class to make the content stack vertically */}
         <div>
-          <p className='mt-0 pt-20 text-8xl'>Hello!</p>{' '}
-          {/* Use mt-0 to remove top margin */}
+          <p className='m-3 text-3xl md:m-6 md:text-6xl xl:m-10 xl:text-8xl'>
+            Hello!
+          </p>
           <br />
         </div>
         <div>
-          <p className='mt-0 pt-20 text-4xl'>
-            {' '}
-            {/* Use mt-0 to remove top margin */}
+          <p className='m-3 text-xl md:m-6 md:text-3xl xl:m-10 xl:text-4xl'>
             My name is Leo Lee and I am a first-year Master student at the
-            University of Southern California.
+            University of Southern California. My research interests are AI/ML,
+            Networking, and Database Systems.
           </p>
         </div>
       </div>
       <div className='m-5'>
-        <Image
-          src='/me.jpeg' // Replace with the URL of your picture
-          alt='Leo Lee' // Add an alt attribute for accessibility
-          width={0} // Set the width of the image
-          height={0} // Set the height of the image
-          sizes='100vw'
-          style={{width: '100%', height: 'auto'}} // optional
-        />
+        {/* https://stackoverflow.com/questions/65169431/how-to-set-the-next-image-component-to-100-height*/}
+        <div className='m-3 md:m-6 xl:ml-10'>
+          <Image
+            src='/me.jpeg'
+            alt='Leo Lee'
+            width={0}
+            height={0}
+            sizes='100vw'
+            style={{width: '100%', height: 'auto'}}
+          />
+        </div>
       </div>
     </div>
   );
