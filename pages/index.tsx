@@ -2,6 +2,7 @@ import Head from 'next/head';
 
 import NavigationBar from './components/topbar';
 import AboutMe from './components/aboutme';
+import MyFooter from './components/footer';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </div>
       <div>
         <AboutMe />
+        <MyFooter />
       </div>
     </>
   );

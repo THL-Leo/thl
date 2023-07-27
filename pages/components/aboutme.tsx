@@ -17,6 +17,11 @@ const AboutMe = () => {
             University of Southern California. My research interests are AI/ML,
             Networking, and Database Systems.
           </p>
+          <p className='m-3 text-xl md:m-6 md:text-3xl xl:m-10 xl:text-4xl'>
+            I have experience working with Web Development and Mobile
+            Development. Right now, I am looking for Software Engineering
+            internship opportunities for the upcoming Summer.
+          </p>
         </div>
       </div>
       <div className='m-5'>
