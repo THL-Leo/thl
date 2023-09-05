@@ -19,7 +19,9 @@ export default function NavigationBar() {
           <Navbar.Link href='/' className='text-inherit'>
             <p>Home</p>
           </Navbar.Link>
-          <Navbar.Link href='https://github.com/THL-Leo' className='text-inherit'>
+          <Navbar.Link
+            href='https://github.com/THL-Leo'
+            className='text-inherit'>
             <p>Projects</p>
           </Navbar.Link>
           <Navbar.Link href='/resume' className='text-inherit'>
