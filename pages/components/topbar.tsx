@@ -20,8 +20,8 @@ export default function NavigationBar() {
             <p>Home</p>
           </Navbar.Link>
           <Navbar.Link
-            // href='https://github.com/THL-Leo'
-            href='/project'
+            href='https://github.com/THL-Leo'
+            // href='/project'
             className='text-inherit'>
             <p>Projects</p>
           </Navbar.Link>
