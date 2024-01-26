@@ -1,23 +1,15 @@
 import Head from 'next/head';
-
-import NavigationBar from './components/topbar';
+import Layout from './components/layout';
 import AboutMe from './components/aboutme';
-import MyFooter from './components/footer';
 
 export default function Home() {
   return (
-    <>
-      <div>
-        <Head>
-          <title>THL</title>
-          <link rel='icon' href='/favicon.ico' />
-        </Head>
-        <NavigationBar />
-      </div>
-      <div>
-        <AboutMe />
-        <MyFooter />
-      </div>
-    </>
+    <Layout>
+      <Head>
+        <title>THL</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+      <AboutMe />
+    </Layout>
   );
 }

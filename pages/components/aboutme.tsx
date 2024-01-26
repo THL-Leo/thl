@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const AboutMe = () => {
   return (
@@ -7,20 +8,22 @@ const AboutMe = () => {
       <div className='m-5 flex flex-col'>
         <div>
           <p className='m-3 text-3xl md:m-6 md:text-6xl xl:m-10 xl:text-8xl'>
-            Hello!
+            Welcome!
           </p>
           <br />
         </div>
         <div>
           <p className='m-3 text-xl md:m-6 md:text-3xl xl:m-10 xl:text-4xl'>
             My name is Leo Lee and I am a first-year Master student at the
-            University of Southern California. My research interests are AI/ML,
-            Networking, and Database Systems.
+            University of Southern California. My research interests are
+            Artificial Intelligence and Machine Learning.
           </p>
           <p className='m-3 text-xl md:m-6 md:text-3xl xl:m-10 xl:text-4xl'>
-            I have experience working with Web Development and Mobile
-            Development. Right now, I am looking for Software Engineering
-            internship opportunities for the upcoming Summer.
+            Besides coding, I enjoy watching basketball, sailing, and playing
+            the saxophone. I am also a diehearted Celtics fan living in LA. If
+            you are interested in my work, reach out to me through my{' '}
+            <Link href='https://www.linkedin.com/in/thl-leo/'>LinkedIn </Link>
+            or email!
           </p>
         </div>
       </div>
