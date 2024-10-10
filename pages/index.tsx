@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Layout from './components/layout';
 import AboutMe from './components/aboutme';
 import {ReactTyped} from 'react-typed';
-import Projects from './components/projects';
 
 const Home = () => {
   const [showNavBar, setShowNavBar] = useState(false);
