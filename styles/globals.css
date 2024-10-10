@@ -26,6 +26,21 @@ a {
   transition: 0.1s;
 }
 
+.fade {
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.fade.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

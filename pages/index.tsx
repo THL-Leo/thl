@@ -1,15 +1,64 @@
+import React, {useState, useEffect} from 'react';
 import Head from 'next/head';
 import Layout from './components/layout';
 import AboutMe from './components/aboutme';
+import {ReactTyped} from 'react-typed';
+import Projects from './components/projects';
 
-export default function Home() {
+const Home = () => {
+  const [showNavBar, setShowNavBar] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 25) {
+      setShowNavBar(true);
+    } else {
+      setShowNavBar(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Layout>
+    <div>
       <Head>
-        <title>THL</title>
+        <title>Leo's website</title>
+        <meta name='description' content="Leo's website" />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <AboutMe />
-    </Layout>
+
+      <Layout showNavBar={showNavBar}>
+        <section
+          className='intro-section flex h-screen items-center justify-center bg-cover bg-center text-white'
+          style={{backgroundImage: "url('/capybara.jpg')"}}>
+          <div className='text-center'>
+            <h1 className='text-4xl font-bold'>
+              I am a{' '}
+              <ReactTyped
+                strings={['student.', 'tech enthusiast.', 'programmer.']}
+                typeSpeed={100}
+                backSpeed={50}
+                loop
+              />
+            </h1>
+            <p className='mt-4 font-bold'>Prev @ AMD, Based in California</p>
+          </div>
+        </section>
+
+        <main className='container mx-auto px-4 py-8'>
+          <AboutMe />
+        </main>
+
+        {/* <main className='container mx-auto px-4 py-8'>
+          <Projects />
+        </main> */}
+      </Layout>
+    </div>
   );
-}
+};
+
+export default Home;

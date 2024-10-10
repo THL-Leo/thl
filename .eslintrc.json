@@ -17,6 +17,7 @@
     "require-jsdoc" : 0,
     "max-len": 0,
     "jsx-no-undef": 0,
-    "react/self-closing-comp": "error"
+    "react/self-closing-comp": "error",
+    "react/no-unescaped-entities": "off"
   }
 }
