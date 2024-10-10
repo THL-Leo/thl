@@ -41,6 +41,18 @@ a {
   pointer-events: auto;
 }
 
+.intro-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  filter: contrast(0.75); /* Reduce contrast to 75% */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

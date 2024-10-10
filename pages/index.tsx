@@ -33,7 +33,7 @@ const Home = () => {
 
       <Layout showNavBar={showNavBar}>
         <section
-          className='intro-section flex h-screen items-center justify-center bg-cover bg-center text-white'
+          className='intro-section'
           style={{backgroundImage: "url('/capybara.jpg')"}}>
           <div className='text-center'>
             <h1 className='text-4xl font-bold'>
@@ -45,7 +45,7 @@ const Home = () => {
                 loop
               />
             </h1>
-            <p className='mt-4 font-bold'>Prev @ AMD, Based in California</p>
+            <p className='mt-4 font-extrabold'>Prev @ AMD, Based in California</p>
           </div>
         </section>
 
