@@ -44,7 +44,9 @@ const Home = () => {
                 loop
               />
             </h1>
-            <p className='mt-4 font-extrabold'>Prev @ AMD, Based in California</p>
+            <p className='mt-4 font-extrabold'>
+              Prev @ AMD, Based in California
+            </p>
           </div>
         </section>
 
