@@ -1,27 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Head from 'next/head';
 import Layout from './components/layout';
 import AboutMe from './components/aboutme';
 import {ReactTyped} from 'react-typed';
 
 const Home = () => {
-  const [showNavBar, setShowNavBar] = useState(false);
-
-  const handleScroll = () => {
-    if (window.scrollY > 25) {
-      setShowNavBar(true);
-    } else {
-      setShowNavBar(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <div>
       <Head>
@@ -30,7 +13,7 @@ const Home = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <Layout showNavBar={showNavBar}>
+      <Layout>
         <section
           className='intro-section'
           style={{backgroundImage: "url('/capybara.jpg')"}}>

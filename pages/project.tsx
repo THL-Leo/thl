@@ -4,7 +4,7 @@ import Projects from './components/projects';
 
 const ProjectPage = () => {
   return (
-    <Layout showNavBar={true}>
+    <Layout>
       <Projects />
     </Layout>
   );

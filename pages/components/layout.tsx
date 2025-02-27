@@ -1,23 +1,22 @@
 import React from 'react';
 import NavigationBar from './topbar';
-// import MyFooter from './footer';
+import MyFooter from './footer';
 
 type LayoutProps = {
   children: React.ReactNode;
-  showNavBar: boolean; // Add this prop to control visibility
 };
 
-const Layout: React.FC<LayoutProps> = ({children, showNavBar}) => {
+const Layout: React.FC<LayoutProps> = ({children}) => {
   return (
-    <>
-      <div className={`fade ${showNavBar ? 'show' : ''}`}>
+    <div className='flex min-h-screen flex-col'>
+      <div className='w-full bg-white shadow-md dark:bg-black'>
         <NavigationBar />
       </div>
-      <main>{children}</main>
-      {/* <div className={`fade ${showNavBar ? 'show' : ''}`}>
+      <main className='flex-grow'>{children}</main>
+      <div className='mt-auto w-full'>
         <MyFooter />
-      </div> */}
-    </>
+      </div>
+    </div>
   );
 };
 
